@@ -135,7 +135,7 @@
     </div>
 
     <div id="start-screen" class="hidden">
-        <div class="main-title">🌺沖縄クイズ区域🌺</div>
+        <div class="main-title">🌺沖縄クイズ🌺</div>
         <div class="sub-title">初級編</div>
         <p>全100問の中からランダムに10問が出題されるさぁ。<br>正解数とクリアタイムで上位を目指そう！</p>
         <div class="input-group">
@@ -360,8 +360,8 @@ function showOverallRankingScreen(currentScreenId) {
 }
 
 function shareOnX() {
-    const text = encodeURIComponent(`🌺【沖縄クイズ】に挑戦したさぁ！\n結果：10問中 ${score}問正解！\nクリアタイム：${finalTime}秒\n\nこちらのサイトもおすすめ！占いはこちら👇\n`);
-    const targetUrl = encodeURIComponent("https://sites.google.com/view/fun-fortune-telling/%E3%83%9B%E3%83%BC%E3%83%A0");
+    const text = encodeURIComponent(`🌺【沖縄クイズ】に挑戦したさぁ！\n結果：10問中 ${score}問正解！\nクリアタイム：${finalTime}秒\n\n挑戦したい方は下記のURLから👇\n`);
+    const targetUrl = encodeURIComponent("https://karimatamasaru.github.io/okinawa-quiz/");
     const hashtags = encodeURIComponent("沖縄クイズ,たのしい占い");
     const shareUrl = `https://twitter.com/intent/tweet?text=${text}&url=${targetUrl}&hashtags=${hashtags}`;
     window.open(shareUrl, '_blank');
