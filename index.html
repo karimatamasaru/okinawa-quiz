@@ -360,10 +360,10 @@ function showOverallRankingScreen(currentScreenId) {
 }
 
 function shareOnX() {
-    const text = encodeURIComponent(`🌺【沖縄クイズ】に挑戦したさぁ！\n結果：10問中 ${score}問正解！\nクリアタイム：${finalTime}秒\n\n挑戦したい方は下記のURLから👇\n`);
+    const text = encodeURIComponent(`🌺【沖縄クイズ 初級編】に挑戦したさぁ！\n結果：10問中 ${score}問正解！\nクリアタイム：${finalTime}秒\n\n挑戦したい方は下記のURLから👇\n`);
     const targetUrl = encodeURIComponent("https://karimatamasaru.github.io/okinawa-quiz/");
-    const hashtags = encodeURIComponent("沖縄クイズ,たのしい占い");
-    const shareUrl = `https://twitter.com/intent/tweet?text=${text}&url=${targetUrl}&hashtags=${hashtags}`;
+    const hashtags = encodeURIComponent("沖縄クイズ,初級");
+    const shareUrl = `https://twitter.com/intent/tweet?text=${text}&hashtags=${hashtags}&url=${targetUrl}`;
     window.open(shareUrl, '_blank');
 }
 
